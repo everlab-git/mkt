@@ -11,8 +11,8 @@ importers:
   apps/api:
     dependencies:
       '@hono/node-server':
-        specifier: 1.12.2
-        version: 1.12.2(hono@4.4.7)
+        specifier: 2.0.5
+        version: 2.0.5(hono@4.4.7)
       hono:
         specifier: 4.4.7
         version: 4.4.7
@@ -478,9 +478,9 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@hono/node-server@1.12.2':
-    resolution: {integrity: sha512-xjzhqhSWUE/OhN0g3KCNVzNsQMlFUAL+/8GgPUr3TKcU7cvgZVBGswFofJ8WwGEHTqobzze1lDpGJl9ZNckDhA==}
-    engines: {node: '>=18.14.1'}
+  '@hono/node-server@2.0.5':
+    resolution: {integrity: sha512-yQFvDmyDo3y6rEOJZDUYPJ49DIKTPpIk4kGvm40xx4Ejne0Pu9a1+exxPN+C1UppWK/WGZX9F++/Xs231tE86g==}
+    engines: {node: '>=20'}
     peerDependencies:
       hono: ^4
 
@@ -1887,7 +1887,7 @@ snapshots:
   '@esbuild/win32-x64@0.21.5':
     optional: true
 
-  '@hono/node-server@1.12.2(hono@4.4.7)':
+  '@hono/node-server@2.0.5(hono@4.4.7)':
     dependencies:
       hono: 4.4.7
 
