@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@hono/node-server": "1.12.2",
-    "hono": "4.4.7",
+    "hono": "4.12.26",
     "pg": "8.12.0",
     "resend": "6.12.4"
   },
