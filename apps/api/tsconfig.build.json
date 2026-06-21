@@ -6,11 +6,11 @@
     "moduleResolution": "Bundler",
     "types": ["node"],
     "outDir": "dist",
-    "rootDir": ".",
+    "rootDir": "src",
     "strict": true,
     "skipLibCheck": true,
     "declaration": true,
     "sourceMap": true
   },
-  "include": ["src", "api"]
+  "include": ["src"]
 }

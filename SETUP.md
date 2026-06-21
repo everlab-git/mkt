@@ -64,7 +64,7 @@ No ambiente (Vercel/servidor), definir pelo menos:
 
 ---
 
-## 3) Vercel (deploy do Editor + API)
+## 3) Vercel (deploy do Editor agora)
 
 ### 3.1 Criar projeto na Vercel
 
@@ -85,39 +85,20 @@ No ambiente (Vercel/servidor), definir pelo menos:
 
 Definir em Preview + Production:
 - `VITE_API_URL`
-  - use a URL do projeto da API na Vercel (ex: `https://freya-api-xyz.vercel.app`)
-  - endpoint de teste: `GET /api/health`
+  - por enquanto pode ser algo como `https://SUA-API-AQUI.example.com`
+  - depois atualizamos para a URL real da API quando decidirmos onde hospedar
+
+### 3.4 Verificação manual do Prompt 1
+
+Ao abrir o editor, a tela inicial deve mostrar **dois cards com o mesmo componente**, mas com temas diferentes:
+- card 1: usa o fallback do sistema quando não existe `theme`
+- card 2: usa um `theme` explícito de exemplo
+
+Isso documenta o critério de aceite de tema por site: o mesmo componente renderiza identidades visuais diferentes sem hardcode de marca no componente.
 
 ---
 
-## 4) Vercel — Projeto da API
-
-> A API está preparada como **Vercel Functions** (pasta `apps/api/api/*`).
-
-### 4.1 Criar projeto na Vercel
-
-1. Criar/importar um **segundo** projeto na Vercel, usando o mesmo repositório.
-2. **Root Directory:** `apps/api`
-3. Framework Preset: **Other**
-
-### 4.2 Build settings
-
-- Install Command:
-  - `pnpm install --frozen-lockfile`
-- Build Command:
-  - `pnpm --filter api build`
-
-### 4.3 Environment variables (API)
-
-Definir em Preview + Production:
-- `DATABASE_URL` (Supabase connection string)
-
-Teste rápido:
-- `GET https://SUA-API.vercel.app/api/health` → `{ "ok": true }`
-
----
-
-## 5) Próximo passo
+## 4) Próximo passo (para eu já deixar pronto)
 
 Quando você decidir o runtime da API, eu ajusto o scaffold para deploy:
 - **Vercel Functions** (Node) ou

@@ -36,6 +36,8 @@ jobs:
       - name: Build
         run: pnpm build
 
+      - name: Lighthouse CI
+        run: pnpm dlx @lhci/cli@0.13.x autorun --config=apps/editor/lighthouserc.json
+
       - name: Dependency audit (high+)
         run: pnpm audit --audit-level high
-
