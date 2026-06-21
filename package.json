@@ -1,0 +1,15 @@
+{
+  "name": "freya-cms",
+  "private": true,
+  "packageManager": "pnpm@9.12.3",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "pnpm --filter editor dev & pnpm --filter api dev",
+    "build": "pnpm --filter editor build && pnpm --filter api build",
+    "test": "pnpm -r test",
+    "type-check": "pnpm -r type-check"
+  }
+}
